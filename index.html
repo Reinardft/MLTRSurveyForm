@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MLTR Survey Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">MLTR Survey Form</h1>
+            <p id="description">Please fill the form below. Thank You!</p>
+        </header>
+        <div class="form-container">
+            <form action="">
+                <div class="form-group">
+                    <label for="name" id="name-label">Name</label>
+                    <input type="text" name="name" id="name" class="fill-area" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="text" name="email" id="email" class="fill-area" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="number" id="number-label">Age</label>
+                    <input type="text" name="age" id="number" class="fill-area" min="10" max="60"
+                        placeholder="How old are you?" required>
+                </div>
+                <div class="form-group">
+                    <label for="dropdown" id="dropdown-label">What is your job?</label>
+                    <select name="occupation" id="dropdown" class="fill-area" required>
+                        <option disabled selected value="">Select your job</option>
+                        <option value="Student">Student</option>
+                        <option value="Unemployed">Unemployed</option>
+                        <option value="Part-time Student">Part-time Student</option>
+                        <option value="Employed">Employed</option>
+                        <option value="Housewife/husband">Housewife/husband</option>
+                        <option value="Prefer not to say">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p id="gender-label">What is your gender?</p>
+                    <label>
+                        <input type="radio" name="gender" class="radio-input" value="male" checked>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" class="radio-input" value="female">
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" class="radio-input" value="prefer not to say">
+                        Prefer not to say
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p id="member-label">Who is your favorite member? <span>(can choose more than one)</span></p>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Jascha Richter">
+                        Jascha Richter
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Søren Madsen">
+                        Søren Madsen
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Kåre Wanscher">
+                        Kåre Wanscher
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p id="albun-label">What is your favorite album?<span>(can choose more than one)</p>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Michael Learns To Rock">
+                        Michael Learns To Rock
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Colours">
+                        Colours
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Played On Pepper">
+                        Played On Pepper
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Nothing To Lose">
+                        Nothing To Lose
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Blue Night">
+                        Blue Night
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input"
+                            value="The Best Of Michael Learns To Rock – Live">
+                        The Best Of Michael Learns To Rock – Live
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value=Eternity">
+                        Eternity
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="Scandinavia">
+                        Scandinavia
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="25">
+                        25
+                    </label>
+                    <label>
+                        <input type="checkbox" name="favorite" class="checkbox-input" value="With Love">
+                        With Love
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment"
+                        placeholder="Enter your comment here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
